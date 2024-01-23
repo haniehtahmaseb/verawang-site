@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+main > .row {
+  background: #000;
+  position: fixed;
+}
+main > .row > header {
+  width: 100%;
+  height: 100px;
+}
+main > .row > header > .row {
+  height: 100%;
+}
+main > .row > header > .row > div {
+  width: 100%;
+}
+main > .row > header > .row > div:first-of-type {
+  height: 65%;
+}
+main > .row > header > .row > div:first-of-type > .row {
+  height: 100%;
+}
+main > .row > header > .row > div:first-of-type > .row > * {
+  height: 100%;
+}
+main > .row > header > .row > div:first-of-type > .row > figure {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+main > .row > header > .row > div:first-of-type > .row > figure > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-right: 60px;
+}
+main > .row > header > .row > div:first-of-type > .row > figure > a > img {
+  height: 45%;
+}
+main > .row > header > .row > div:first-of-type > .row > .row {
+  width: 40%;
+  justify-content: flex-end;
+  align-items: center;
+}
+main > .row > header > .row > div:first-of-type > .row > .row > a {
+  padding-right: 30px;
+  color: gray;
+  font-size: 13px;
+}
+main > .row > header > .row > div:last-of-type {
+  height: 35%;
+}
+main > .row > header > .row > div:last-of-type > .row {
+  height: 100%;
+  justify-content: center;
+}
+main > .row > header > .row > div:last-of-type > .row > nav {
+  height: 100%;
+  width: 80%;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  flex-grow: 1;
+  position: relative;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li:hover > a {
+  color: gray;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li:hover > ul {
+  height: 190px;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li > a {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li > ul {
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 220%;
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  height: 0;
+  z-index: 1;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li > ul > li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  padding-left: 15px;
+}
+main > .row > header > .row > div:last-of-type > .row > nav > ul > li > ul > li > a {
+  color: #ffffff;
+  font-size: 12px;
+}
+main > .slider {
+  width: 100%;
+  height: 100vh;
+}
+main > .slider > .row {
+  height: 100%;
+  background-image: url(../pic/buffer-image-homepage.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+main > .box {
+  width: 100%;
+  height: 800px;
+}
+main > .box > .row {
+  height: 100%;
+}
+main > .box > .row > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .box > .row > div:first-of-type {
+  width: 30%;
+  height: 300px;
+}
+main > .box > .row > div:first-of-type * {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+  width: 100%;
+}
+main > .box > .row > div:first-of-type > h3 {
+  height: 40%;
+  font-size: 50px;
+  padding-left: 70px;
+  margin-top: 90px;
+}
+main > .box > .row > div:first-of-type > ul {
+  height: 60%;
+}
+main > .box > .row > div:first-of-type > ul > li > a {
+  line-height: 40px;
+  padding-left: 70px;
+  font-size: 15px;
+  font-weight: normal;
+}
+main > .box > .row > div:first-of-type > ul > li > a:hover {
+  color: gray;
+}
+main > .box > .row > div:last-of-type {
+  width: 70%;
+}
+main > .box > .row > div:last-of-type > figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .box > .row > div:last-of-type > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .box1 {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+main > .box1 > .row {
+  height: 100%;
+}
+main > .box1 > .row > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .box1 > .row > div:first-of-type {
+  width: 30%;
+  height: 300px;
+}
+main > .box1 > .row > div:first-of-type * {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  width: 100%;
+}
+main > .box1 > .row > div:first-of-type > h3 {
+  height: 40%;
+  font-size: 50px;
+  padding-left: 70px;
+  margin-top: 90px;
+}
+main > .box1 > .row > div:first-of-type > ul {
+  height: 60%;
+}
+main > .box1 > .row > div:first-of-type > ul > li > a {
+  line-height: 40px;
+  padding-left: 70px;
+  font-size: 15px;
+  font-weight: normal;
+}
+main > .box1 > .row > div:first-of-type > ul > li > a:hover {
+  color: gray;
+}
+main > .box1 > .row > div:last-of-type {
+  width: 70%;
+}
+main > .box1 > .row > div:last-of-type > figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .box1 > .row > div:last-of-type > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > footer {
+  width: 100%;
+  height: 270px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+main > footer > .row {
+  height: 100%;
+}
+main > footer > .row > div {
+  height: 100%;
+}
+main > footer > .row > div:first-of-type {
+  width: 100%;
+  height: 30%;
+}
+main > footer > .row > div:first-of-type > ul {
+  height: 100%;
+  width: 45%;
+}
+main > footer > .row > div:first-of-type > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  padding-left: 70px;
+}
+main > footer > .row > div:first-of-type > ul > li:hover > a {
+  color: gray;
+}
+main > footer > .row > div:first-of-type > ul > li > a {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+main > footer > .row > div:first-of-type > ul > li > span {
+  color: gray;
+  font-size: 13px;
+}
+main > footer > .row > div:last-of-type {
+  width: 100%;
+  height: 70%;
+}
+main > footer > .row > div:last-of-type > .row {
+  height: 100%;
+}
+main > footer > .row > div:last-of-type > .row > figure {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > footer > .row > div:last-of-type > .row > figure > img {
+  width: 15%;
+}
+main > footer > .row > div:last-of-type > .row > div {
+  width: 50%;
+  height: 100%;
+}
+main > footer > .row > div:last-of-type > .row > div > h4 {
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+main > footer > .row > div:last-of-type > .row > div > ul {
+  width: 100%;
+}
+main > footer > .row > div:last-of-type > .row > div > ul > li {
+  height: 100%;
+  width: 100%;
+}
+main > footer > .row > div:last-of-type > .row > div > ul > li > a {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 30px;
+  opacity: 50%;
+}
+main > footer > .row > div:last-of-type > .row > div > ul > li > a:hover {
+  color: gray;
+}/*# sourceMappingURL=master.css.map */

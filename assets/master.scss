@@ -1,0 +1,358 @@
+%bt{
+    border: 1px solid red;
+}
+%bgt1{
+    background-color: yellow;
+}
+%bgt2{
+    background-color: green;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    >.row{
+        background: #000;
+        position: fixed;
+        >header{
+            width: 100%;
+            height: 100px;
+            >.row{
+                height: 100%;
+                >div{
+                    width: 100%;
+                &:first-of-type{
+                        height: 65%;
+                            >.row{
+                            height: 100%;
+                            >*{
+                                height: 100%;
+                            }
+                            >figure{
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+                                >a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    width: 100%;
+                                    height: 100%;
+                                    padding-right: 60px;
+                                    >img{
+                                        height: 45%;
+                                    }
+                                }
+                            }
+                            >.row{
+                                width: 40%;
+                                justify-content: flex-end;
+                                align-items: center;
+                                >a{
+                                    padding-right: 30px;
+                                    color: gray;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        height: 35%;
+                            >.row{
+                            height: 100%;
+                            justify-content: center;
+                            >nav{
+                                height: 100%;
+                                width: 80%;
+                                    >ul{
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    >li{
+                                        width: max-content;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        padding: 15px;
+                                        flex-grow: 1;
+                                        position: relative;
+                                        &:hover>a{
+                                            color: gray;
+                                        }
+                                        &:hover>ul{
+                                        height: 190px;
+                                        }
+                                        >a{
+                                            color: white;
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                        }
+                                        >ul{
+                                            overflow: hidden;
+                                            flex-wrap: wrap;
+                                            width: 220%;
+                                            background-color: rgb(0, 0, 0);
+                                            transition: .4s;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 35px;
+                                            height: 0;
+                                            z-index: 1;
+                                            >li{
+                                                width: 100%;
+                                                display: flex;
+                                                align-items: center;
+                                                line-height: 30px;
+                                                padding-left: 15px;
+                                                >a{
+                                                    color: #ffffff;
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.slider{
+        width: 100%;
+        height: 100vh;
+        >.row{
+            height: 100%;
+            background-image: url(../pic/buffer-image-homepage.png);
+            background-size: cover;
+            background-attachment: fixed;
+            // transform: translateY(0);
+        }
+    }
+    >.box{
+        width: 100%;
+        height: 800px;
+        >.row{
+            height: 100%;
+            >div{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                &:first-of-type{
+                    width: 30%;
+                    height: 300px;
+                    *{
+                        text-transform: uppercase;
+                        color: rgb(0, 0, 0);
+                        font-weight: lighter;
+                        width: 100%;
+                        
+                    }
+                    >h3{
+                        height: 40%;
+                        font-size: 50px;
+                        padding-left: 70px;
+                        margin-top: 90px;
+                    }
+                    >ul{
+                        height: 60%;
+                        >li{
+                            >a{
+                                line-height: 40px;
+                                padding-left: 70px;
+                                font-size: 15px;
+                                font-weight: normal;
+                                &:hover{
+                                    color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:last-of-type{
+                    width: 70%;
+                    >figure{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        >img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.box1{
+        width: 100%;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.92);
+        >.row{
+            height: 100%;
+            >div{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                &:first-of-type{
+                    width: 30%;
+                    height: 300px;
+                    *{
+                        text-transform: uppercase;
+                        color: rgb(255, 255, 255);
+                        font-weight: lighter;
+                        width: 100%;
+                        
+                    }
+                    >h3{
+                        height: 40%;
+                        font-size: 50px;
+                        padding-left: 70px;
+                        margin-top: 90px;
+                    }
+                    >ul{
+                        height: 60%;
+                        >li{
+                            >a{
+                                line-height: 40px;
+                                padding-left: 70px;
+                                font-size: 15px;
+                                font-weight: normal;
+                                &:hover{
+                                    color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:last-of-type{
+                    width: 70%;
+                    >figure{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        >img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >footer{
+        width: 100%;
+        height: 270px;
+        background-color: rgba(0, 0, 0, 0.92);
+        >.row{
+            height: 100%;
+            >div{
+                height: 100%;
+                &:first-of-type{
+                    width: 100%;
+                    height: 30%;
+                    // border-bottom: 1px solid #ffffff1f;
+                    >ul{
+                        height: 100%;
+                        width: 45%;
+                        >li{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-shrink: 1;
+                            padding-left: 70px;
+                            &:hover>a{
+                                color:gray
+                            }
+                            >a{
+                                color: white;
+                                font-size: 13px;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            >span{
+                                color: gray;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                &:last-of-type{
+                    width: 100%;
+                    height: 70%;
+                    >.row{
+                        height: 100%;
+                        >figure{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            >img{
+                                width: 15%;
+                            }
+                        }
+                        >div{
+                            width: 50%;
+                            height: 100%;
+                            >h4{
+                                color: white;
+                                line-height: 20px;
+                                display: flex;
+                                justify-content: center;
+                                text-transform: uppercase;
+                                line-height: 40px;
+                            }
+                            >ul{
+                                width: 100%;
+                                >li{
+                                    height: 100%;
+                                    width: 100%;
+                                    >a{
+                                        color: white;
+                                        text-transform: uppercase;
+                                        display: flex;
+                                        justify-content: center;
+                                        font-size: 15px;
+                                        line-height: 30px;
+                                        opacity: 50%;
+                                        &:hover{
+                                            color:gray;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
