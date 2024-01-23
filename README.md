@@ -9,7 +9,7 @@
 
 - Developed by Hani Tahmaseb
 
-- Technologies Used - Html , css
+- Technologies Used - Html , css , sass
 
 - Role - Frontend
 
